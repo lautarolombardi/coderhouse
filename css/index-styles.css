@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    /* COLORES */
+    --blanco: #cdffff;
+    --celesteClaro: #94e7ff;
+    --celeste: #40cfff;
+    --celesteOscuro: #2499c7;
+    --azul: #006691;
+
+    --padding: 80px 0;
+    --background: linear-gradient(210deg, #00669100, #94e7ffdd);
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+
+nav{
+    grid-area: nav;
+}
+
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.header{
+    --padding: 0;
+
+    height: calc(100vh - 70px);
+
+    margin-top: 70px;
+
+    grid-area: header;
+
+    background-image: url(../img/frente-escuela.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header__texts{
+    height: inherit;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-family: "Poppins";
+}
+
+.header__title{
+    margin-bottom: 20px;
+
+    font-size: 1.9rem;
+    color: var(--azul);
+}
+
+.header__subtitle{
+    font-size: 1.3rem;
+    color: var(--azul);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Poppins";
+}
+
+.section{
+    margin: 20px;
+    padding: 20px;
+
+    border: 2px solid var(--azul);
+
+    text-align: center;
+}
+
+.section__title, .section__text, .section__img{
+    margin-bottom: 15px;
+}
+
+.section__text{
+    line-height: 20px;
+}
+
+.section__img{
+    width: 100%;
+}
+
+.section__button{
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "nav nav"
+        "header header"
+        "main main"
+        "footer footer";
+    }
+
+    .header__title{
+        font-size: 2rem;
+    }
+
+    .header__subtitle{
+        font-size: 1.6rem;
+    }
+
+    .main{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .header__title{
+        font-size: 3rem;
+    }
+
+    .header__subtitle{
+        font-size: 2rem;
+    }
+}
+
+
+
+
