@@ -116,6 +116,11 @@ footer{
     cursor: pointer;
 }
 
+.section__button:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
 @media screen and (min-width: 768px){
     body{
         grid-template-columns: repeat(2, 1fr);

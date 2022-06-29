@@ -52,6 +52,12 @@
     color: var(--azul);
 }
 
+.nav__title:hover{
+    transform: scale(0.9);
+    transition: all .5s;
+}
+
+
 .nav__menu{
     height: 20px;
     width: 25px;
@@ -80,6 +86,11 @@
 
     background-color: var(--celesteOscuro);
 
+    transition: all .5s;
+}
+
+.nav__item:hover{
+    transform: scale(0.9);
     transition: all .5s;
 }
 
@@ -169,6 +180,11 @@
     width: 30px;
 
     margin-left: 20px;
+}
+
+.social__icon:hover{
+    transform: scale(1.1);
+    transition: all .5s;
 }
 
 .social__icon--instagram{
