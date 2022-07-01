@@ -25,7 +25,16 @@
     cursor: pointer;
 }
 
-.nav{
+.bg-celesteClaro{
+    background-color: var(--celesteClaro);
+}
+
+.bg-celesteOscuro{
+    background-color: var(--celesteOscuro);
+}
+
+
+/* .nav{
     --padding: 0;
 
     height: 70px;
@@ -38,9 +47,9 @@
     background-color: var(--celesteClaro);
 
     font-family: "Raleway";
-}
+} */
 
-.nav__flex{
+/* .nav__flex{
     height: inherit;
 
     display: flex;
@@ -103,7 +112,7 @@
 
 .nav__link:hover{
     color: var(--azul);
-}
+} */
 
 .footer{
     background-color: var(--celesteOscuro);

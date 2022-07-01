@@ -107,8 +107,8 @@ footer{
 }
 
 @media screen and (min-width: 1024px) {
-    .novedades__text{
-        left: 15px;
+    .novedades__flex{
+        justify-content: space-around;
     }
 }
 
