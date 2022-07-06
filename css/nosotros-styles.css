@@ -40,7 +40,7 @@ footer{
 }
 
 .nosotros__title{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     text-align: center;
 }
@@ -53,7 +53,7 @@ footer{
 
 .nosotros__figure{
     width: 90%;
-    max-width: 400px;
+    max-width: 350px;
 
     margin-bottom: 20px;
 }
@@ -70,7 +70,15 @@ footer{
 
 .nosotros__text{
     width: 80%;
+
+    padding: 10px;
+
+    background-color: var(--blanco);
+    border: 1px solid var(--celesteOscuro);
+
     line-height: 25px;
+
+    color: black;
 }
 
 @media screen and (min-width: 768px){
@@ -94,6 +102,10 @@ footer{
     .nosotros__flex{
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .nosotros__figure{
+        margin-bottom: unset;
     }
 
     .nosotros__text{

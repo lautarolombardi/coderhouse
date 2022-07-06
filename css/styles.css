@@ -9,6 +9,7 @@
     --azul: #006691;
 
     --padding: 80px 0;
+    --background: linear-gradient(270deg, #2499c7, #94e7ff);
 }
 
 .container{
@@ -35,7 +36,8 @@
     top: 0;
     z-index: 1;
     
-    background-color: var(--celesteClaro);
+    background-color: var(--celeste);
+    box-shadow: 0 0 5px gray;
 
     font-family: "Raleway";
 }
@@ -52,9 +54,11 @@
     color: var(--azul);
 }
 
-.nav__title:hover{
+.nav__logo:hover{
     transform: scale(0.9);
-    transition: all .5s;
+    transition: all 500ms;
+
+    color: var(--celesteOscuro);
 }
 
 
@@ -102,7 +106,7 @@
 }
 
 .nav__link:hover{
-    color: var(--azul);
+    color: var(--celesteClaro);
 }
 
 .footer{
@@ -131,6 +135,12 @@
 .footer__iframe{
     height: 100%;
     width: 100%;
+
+    transition: all 500ms;
+}
+
+.footer__guide:hover{
+    border: 0.5px solid black;
 }
 
 .footer__title{
@@ -195,6 +205,12 @@
     width: 40px;
 }
 
+@media (min-width: 280px) and (max-width: 320px){
+    .container{
+        width: 95%;
+    }
+}
+
 @media screen and (min-width: 768px){
     .nav__menu{
         display: none;
@@ -257,6 +273,10 @@
 }
 
 @media screen and (min-width: 1024px){
+    .nav__logo{
+        font-size: 1.3rem;
+    }
+
     .footer__flex{
         justify-content: space-around;
     }
