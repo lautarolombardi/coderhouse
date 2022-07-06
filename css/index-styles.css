@@ -9,7 +9,7 @@
     --azul: #006691;
 
     --padding: 80px 0;
-    --background: linear-gradient(210deg, #00669100, #94e7ffdd);
+    --background: linear-gradient(270deg, #00669122, #94e7ffaa);
 }
 
 body{
@@ -50,7 +50,7 @@ footer{
 
     grid-area: header;
 
-    background-image: url(../img/frente-escuela.jpg);
+    background-image: var(--background), url(../img/frente-escuela.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -91,32 +91,39 @@ footer{
 
 .section{
     margin: 20px;
-    padding: 20px;
+    padding: 25px;
 
     border: 2px solid var(--azul);
+    box-shadow: 2px 5px 10px gray;
 
     text-align: center;
 }
 
 .section__title, .section__text, .section__img{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .section__text{
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .section__img{
     width: 100%;
 }
 
-.section__button{
-    padding: 5px 10px;
+.section__link{
+    display: inline-block;
+
+    padding: 10px 15px;
+
+    background-color: var(--celesteOscuro);
 
     cursor: pointer;
+
+    color: white;
 }
 
-.section__button:hover{
+.section__link:hover{
     transform: scale(1.1);
     transition: all .5s;
 }

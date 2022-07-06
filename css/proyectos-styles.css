@@ -49,7 +49,7 @@ footer{
 
 .proyectos__card{
     margin: 20px 10px;
-    padding: 10px;
+    padding: 15px;
 
     border: 2px solid var(--celesteOscuro);
     border-radius: 20px;
@@ -64,10 +64,15 @@ footer{
 
 .proyectos__img{
     width: 100%;
+
+    margin-bottom: 20px;
+
+    border: 1px solid var(--celesteOscuro);
+    border-radius: 20px;
 }
 
 .proyectos__text{
-    line-height: 20px;
+    line-height: 25px;
 }
 
 @media screen and (min-width: 768px){
