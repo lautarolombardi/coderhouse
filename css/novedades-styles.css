@@ -1,59 +1,7 @@
-:root{
-    /* COLORES */
-    --blanco: #cdffff;
-    --celesteClaro: #94e7ff;
-    --celeste: #40cfff;
-    --celesteOscuro: #2499c7;
-    --azul: #006691;
-
-    --padding: 80px 0;
-}
-
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "nav"
-    "main"
-    "footer";
-}
-
-nav{
-    grid-area: nav;
-}
-
-main{
-    grid-area: main;
-}
-
-footer{
-    grid-area: footer;
-}
-
 .novedades{
-    margin-top: 70px;
-
-    text-align: center;
+    margin-top: 72.4px;
 
     font-family: "Poppins";
-}
-
-.novedades__title{
-    margin-bottom: 20px;
-}
-
-.novedades__flex{
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.novedades__container{
-    padding: 20px;
 }
 
 .novedades__text{
@@ -83,33 +31,3 @@ footer{
 
     border: 2px solid var(--azul);
 }
-
-@media screen and (min-width: 768px){
-    body{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "nav nav"
-        "main main"
-        "footer footer";
-    }
-
-    .novedades__flex{
-        flex-direction: row;
-    }
-
-    .novedades__container{
-        margin: 10px;
-    }
-
-    .novedades__text{
-        left: 8px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .novedades__flex{
-        justify-content: space-around;
-    }
-}
-
-

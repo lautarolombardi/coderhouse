@@ -7,267 +7,113 @@
     --celeste: #40cfff;
     --celesteOscuro: #2499c7;
     --azul: #006691;
-
-    --padding: 80px 0;
 }
 
-.container{
-    width: 90%;
-    max-width: 1200px;
-
-    margin: 0 auto;
-    padding: var(--padding);
-
-    overflow: hidden;
-}
-
-.pointer{
-    cursor: pointer;
-}
-
-.bg-celesteClaro{
+.bg-celeste-claro{
     background-color: var(--celesteClaro);
 }
 
-.bg-celesteOscuro{
+.bg-celeste{
+    background-color: var(--celeste);;
+}
+
+.bg-celeste-oscuro{
     background-color: var(--celesteOscuro);
 }
 
+.subtitle{
+    margin-bottom: 30px;
 
-/* .nav{
-    --padding: 0;
-
-    height: 70px;
-    width: 100%;
-
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    
-    background-color: var(--celesteClaro);
-
-    font-family: "Raleway";
-} */
-
-/* .nav__flex{
-    height: inherit;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav__logo{
-    color: var(--azul);
-}
-
-.nav__title:hover{
-    transform: scale(0.9);
-    transition: all .5s;
-}
-
-
-.nav__menu{
-    height: 20px;
-    width: 25px;
-}
-
-.nav__input{
-    display: none;
-}
-
-.nav__input:checked ~ .nav__list{
-    left: 0;
-}
-
-.nav__list{
-    height: calc(100vh - 70px);
-    width: 100%;
-
-    position: fixed;
-    top: 70px;
-    left: -100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background-color: var(--celesteOscuro);
-
-    transition: all .5s;
-}
-
-.nav__item:hover{
-    transform: scale(0.9);
-    transition: all .5s;
-}
-
-.nav__link{
     font-weight: 700;
-    color: var(--blanco);
+}
+
+.navbar{
+    box-shadow: 0 2px 10px gray;
+}
+
+.navbar-title, .nav-link{
+    font-family: "Raleway";
+    font-weight: 700;
+    color: var(--azul);
 
     transition: all 300ms;
 }
 
-.nav__link:hover{
-    color: var(--azul);
-} */
+.navbar-title:hover, .nav-link:hover{
+    transform: scale(0.95);
+    color: var(--celesteOscuro);
+} 
 
 .footer{
     background-color: var(--celesteOscuro);
 
     font-family: "Raleway";
-
-    text-align: center;
 }
 
-.footer__flex{
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer__guide{
-    height: 35%;
-    width: 100%;
+.footer-guide{
     max-width: 305px;
 }
 
-.footer__iframe{
+.footer-iframe{
     height: 100%;
     width: 100%;
 }
 
-.footer__title{
-    margin-bottom: 5px;
-
-    font-size: 1.5rem;
+.footer-title{
+    font-weight: 700;
 }
 
-.form__div{
-    margin-bottom: 5px;
+.footer-btn{
+    margin-right: 20px;
+
+    background-color: var(--celeste);
 }
 
-.form__button{
-    margin-right: 10px;
-    padding: 5px 25px;
+.footer-btn:hover{
+    background-color: var(--celesteClaro);
+
+    color: var(--azul);
 }
 
 .social{
-    --padding: 20px 0;
-
-    height: 70px;
+    height: 150px;
 
     background-color: var(--azul);
 }
 
-.social__title{
-    margin-bottom: 10px;
-
+.social-title{
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--blanco);
 }
 
-.social__flex{
-    height: inherit;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.social__icons{
-    height: 100%;
-}
-
-.social__icon{
+.social-icon{
     height: 30px;
     width: 30px;
 
     margin-left: 20px;
 }
 
-.social__icon:hover{
+.social-icon:hover{
     transform: scale(1.1);
     transition: all .5s;
 }
 
-.social__icon--instagram{
+.social-icon-instagram{
     width: 60px;
 }
 
-.social__icon--youtube{
+.social-icon-youtube{
     width: 40px;
 }
 
-@media screen and (min-width: 768px){
-    .nav__menu{
-        display: none;
+@media (min-width: 768px){
+    .footer-guide{
+        height: 300px;
     }
 
-
-    .nav__list{
-        width: unset;
-
-        position: unset;
-
-        flex-basis: 60%;
-        flex-direction: row;
-
-        display: flex;
-        justify-content: space-between;
-
-        background-color: unset;
-
-        transition: unset;
-
-    }
-
-    .nav__link{
-        color: var(--azul);
-    }
-
-    .nav__link:hover{
-        color: var(--celesteOscuro);
-    }
-
-    .footer{
-        --padding: 30px 0;
-
-        text-align: unset;
-    }
-
-    .footer__flex{
-        width: 100%;
-
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .footer__guide{
-        height: 70%;
-    }
-
-    .social__flex{
-        height: inherit;
-
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .social__title{
-        font-size: 1.2rem;
+    .social{
+        height: 70px;
     }
 }
 
-@media screen and (min-width: 1024px){
-    .footer__flex{
-        justify-content: space-around;
-    }
-
-}

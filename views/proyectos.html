@@ -12,110 +12,122 @@
     <link rel="stylesheet" href="../css/proyectos-styles.css">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg
-     bg-celesteClaro">
+    <nav class="navbar fixed-top navbar-expand-md bg-celeste">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <h2 class="nav__title">E.E.S. N°56</h2>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="docentes.html">Docentes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="novedades.html">Novedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="proyectos.html">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="../index.html">
+                <h2 class="navbar-title">E.E.S. N°56</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="docentes.html">Docentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <main class="proyectos container">
-        <h2 class="proyectos__title">Proyectos</h2>
-        <div class="proyectos__flex">
-            <div class="proyectos__card">
-                <figure class="proyectos__figure">
-                    <img src="../img/escuela.jpg" alt="Imagen de proyectos" class="proyectos__img">
-                </figure>
-                <p class="proyectos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia vero eaque eum aliquam modi tempora illo nihil necessitatibus, dolore temporibus consequuntur quidem explicabo sequi incidunt vel doloribus sint ipsum?</p>
+    <main class="proyectos text-center py-5 container-fluid">
+        <h2 class="proyectos-title subtitle">Proyectos</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card w-50 mx-auto m-2 border-2 border-primary">
+                    <img src="../img/escuela.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure eos vero nisi id! Temporibus rem aut, in tenetur architecto exercitationem quidem excepturi ut quaerat quas atque illo sed itaque?</p>
+                    </div>
+                </div>
             </div>
-            <div class="proyectos__card">
-                <figure class="proyectos__figure">
-                    <img src="../img/escuela.jpg" alt="Imagen de proyectos" class="proyectos__img">
-                </figure>
-                <p class="proyectos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia vero eaque eum aliquam modi tempora illo nihil necessitatibus, dolore temporibus consequuntur quidem explicabo sequi incidunt vel doloribus sint ipsum?</p>
+            <div class="col-lg-4">
+                <div class="card w-50 mx-auto m-2 border-2 border-primary">
+                    <img src="../img/escuela.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure eos vero nisi id! Temporibus rem aut, in tenetur architecto exercitationem quidem excepturi ut quaerat quas atque illo sed itaque?</p>
+                    </div>
+                </div>
             </div>
-            <div class="proyectos__card">
-                <figure class="proyectos__figure">
-                    <img src="../img/escuela.jpg" alt="Imagen de proyectos" class="proyectos__img">
-                </figure>
-                <p class="proyectos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, officia vero eaque eum aliquam modi tempora illo nihil necessitatibus, dolore temporibus consequuntur quidem explicabo sequi incidunt vel doloribus sint ipsum?</p>
+            <div class="col-lg-4">
+                <div class="card w-50 mx-auto m-2 border-2 border-primary">
+                    <img src="../img/escuela.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure eos vero nisi id! Temporibus rem aut, in tenetur architecto exercitationem quidem excepturi ut quaerat quas atque illo sed itaque?</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <footer class="footer" id="#contacto">
 
-        <div class="footer__flex container">
+        <div class="container-fluid container-lg py-5">
+            <div class="row align-items-center">
+                
+                <div class="col-md-6">
+                    <div class="footer-guide mb-3">
+                        <iframe class="footer-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.143891144723!2d-58.398185516424086!3d-34.602342189400794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca94fca9afd9%3A0xbaab425bd032fbee!2sFacultad%20de%20Ciencias%20Econ%C3%B3micas%20UBA!5e0!3m2!1sen!2sar!4v1654007630168!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             
-            <div class="footer__guide">
-                <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.143891144723!2d-58.398185516424086!3d-34.602342189400794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca94fca9afd9%3A0xbaab425bd032fbee!2sFacultad%20de%20Ciencias%20Econ%C3%B3micas%20UBA!5e0!3m2!1sen!2sar!4v1654007630168!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-    
-            <div class="footer__contact">
-                <h3 class="footer__title">Contacto</h3>
-                <form action="envio.php" class="form">
-
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Lautaro">
+                <div class="col-md-6">
+                    <div class="footer-contact p-2">
+                        <h3 class="footer-title">Contacto</h3>
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputText1" class="form-label">Nombre</label>
+                              <input type="text" class="form-control" id="exampleInputText1">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Alumno</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            <button type="reset" class="footer-btn btn">Limpiar</button>
+                            <button type="submit" class="footer-btn btn">Enviar</button>
+                          </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-
-                    <input class="btn btn-primary" type="submit" value="Enviar">
-                    <input class="btn btn-primary" type="reset" value="Limpiar">
-    
-                </form>
+                </div>
             </div>
         </div>
 
         <section class="social">
-            <div class="social__flex container">
-
-                <h4 class="social__title">Seguinos en nuestras redes sociales</h4>
-
-                <div class="social__icons">
-                    <a href="#" class="social__links">
-                        <img src="../img/facebook.png" alt="Logo de facebook" class="social__icon social__icon--facebook">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between container py-3 text-center">
+        
+                <h4 class="social-title mb-4 mb-md-0">Seguinos en nuestras redes sociales</h4>
+        
+                <div class="social-icons">
+                    <a href="#" class="social-link">
+                        <img src="../img/facebook.png" alt="Logo de facebook" class="social-icon social-icon-facebook">
                     </a>
-                    <a href="#" class="social__links">
-                        <img src="../img/instagram.png" alt="Logo de instagram" class="social__icon social__icon--instagram">
+                    <a href="#" class="social-link">
+                        <img src="../img/instagram.png" alt="Logo de instagram" class="social-icon social-icon-instagram">
                     </a>
-                    <a href="#" class="social__links">
-                        <img src="../img/youtube.png" alt="Logo de youtube" class="social__icon social__icon--youtube">
+                    <a href="#" class="social-link">
+                        <img src="../img/youtube.png" alt="Logo de youtube" class="social-icon social-icon-youtube">
                     </a>
                 </div>
-
+        
             </div>
         </section>
         

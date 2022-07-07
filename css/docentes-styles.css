@@ -1,38 +1,5 @@
-:root{
-    /* COLORES */
-    --blanco: #cdffff;
-    --celesteClaro: #94e7ff;
-    --celeste: #40cfff;
-    --celesteOscuro: #2499c7;
-    --azul: #006691;
-
-    --padding: 80px 0;
-}
-
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "nav"
-    "main"
-    "footer";
-}
-
-nav{
-    grid-area: nav;
-}
-
-main{
-    grid-area: main;
-}
-
-footer{
-    grid-area: footer;
-}
-
 .main{
-    margin-top: 70px;
+    margin-top: 72.4px;
 }
 
 .docentes{
@@ -41,26 +8,13 @@ footer{
     font-family: "Poppins";
 }
 
-.docentes__title{
-    margin-bottom: 30px;
-}
-
-.docentes__grid{
-    height: 100%;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    row-gap: 20px;
-}
-
-.docentes__figure{
+.docentes-figure{
     height: 80%;
     width: 60%;
     max-width: 200px;
 }
 
-.docentes__img{
+.docentes-img{
     height: 100%;
     width: 80%;
 
@@ -69,25 +23,6 @@ footer{
     
     border: 2px solid var(--azul);
     border-radius: 50%;
-}
-
-@media screen and (min-width: 768px){
-    body{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "nav nav"
-        "main main"
-        "footer footer";
-    }
-
-    .docentes__grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .docentes__img{
-        height: 100%;
-        width: 100%;
-    }
 }
 
 
