@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
-
 :root{
-    /* COLORES */
-    --blanco: #cdffff;
-    --celesteClaro: #94e7ff;
-    --celeste: #40cfff;
-    --celesteOscuro: #2499c7;
-    --azul: #006691;
-
     --background: linear-gradient(270deg, #00669122, #94e7ffaa);
 }
 
