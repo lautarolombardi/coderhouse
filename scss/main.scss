@@ -1,8 +1,11 @@
-:root{
-    --background: linear-gradient(270deg, #00669122, #94e7ffaa);
-}
+@import "_vars";
+@import "_fonts";
+@import "_commons";
+@import "_navBar";
+@import "_footer";
+@import "_content";
 
-.header{
+/* .header{
     height: calc(100vh - 62.5333px);
 
     margin-top: 62.5333px;
@@ -77,4 +80,4 @@
     
         color: var(--azul);
     }
-}
+} */

@@ -1,0 +1,202 @@
+//index
+
+.header{
+    height: calc(100vh - 62.5333px);
+
+    margin-top: 62.5333px;
+
+    background: $background, url(../img/frente-escuela.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .header-texts{
+        height: inherit;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        text-align: center;
+
+        .header-title{
+            margin-bottom: 20px;
+    
+            font-family: $mainFont;
+            font-size: $textSm;
+            font-weight: 700;
+        
+            color: $azul;
+
+            @media (min-width: 768px){
+                font-size: $textLg;
+            }
+
+            @media (min-width: 1024px){
+                font-size: $textXl;
+            }
+        }
+
+        .header-subtitle{
+            font-family: "Poppins";
+            font-size: $textSm;
+        
+            color: $azul;
+
+            @media (min-width: 1024px){
+                font-size: $textLg;
+            }
+        }
+    }
+    
+}
+
+.main-index{
+    .card-title{
+        margin-bottom: 15px;
+    
+        font-weight: 700;
+    }
+    
+    .card-title, .card-text{
+        font-family: $mainFont;
+    }
+    
+    .card-btn{
+        background-color: $celesteOscuro;
+    
+        transition: all 300ms;
+    
+        color: white;
+    }
+    
+    .card-btn:hover{
+        background-color: $blanco;
+    
+        color: $azul;
+    }
+}
+
+
+
+//docentes
+
+.main-docentes{
+    margin-top: 72.4px;
+}
+
+.docentes{
+    text-align: center;
+
+    font-family: $mainFont;
+
+    .docentes-figure{
+        height: 80%;
+        width: 60%;
+        max-width: 200px;
+    }
+    
+    .docentes-img{
+        height: 100%;
+        width: 80%;
+    
+        object-fit: cover;
+        object-position: center;
+        
+        border: 2px solid $azul;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+//novedades
+.main-novedades{
+    margin-top: 72.4px;
+
+    font-family: $mainFont;
+
+    .novedades__text{
+        width: 90%;
+    
+        padding: 10px;
+    
+        position: relative;
+        bottom: 30px;
+        left: 15px;
+    
+        background-color: $celesteClaro;
+    
+        line-height: 25px;
+    }
+    
+    .novedades__figure{
+        width: 100%;
+    
+        margin: 0 auto;
+
+        .novedades__img{
+            width: 100%;
+        
+            border: 2px solid $azul;
+        }
+    }
+}
+
+
+
+
+//proyectos
+
+.main-proyectos{
+    margin-top: 72.4px;
+
+    font-family: $mainFont;
+
+    .card{
+        min-width: 80%;
+
+        .card-text{
+            line-height: 25px;
+        }
+    }
+}
+
+
+
+//nosotros
+
+.main-nosotros{
+    margin-top: 72.4px;
+    
+    font-family: $mainFont;
+
+    .nosotros-figure{
+        width: 90%;
+        max-width: 400px;
+    
+        margin-bottom: 20px;
+
+        .nosotros-img{
+            height: 100%;
+            width: 100%;
+        
+            object-fit: cover;
+            object-position: center;
+        
+            border: 2px solid $celesteOscuro;
+        }
+    }
+    
+    .nosotros-text{
+        width: 80%;
+    
+        background-color: $blanco;
+        border: 1px solid $celesteOscuro;
+    
+        line-height: 25px;
+    }
+}
+
+

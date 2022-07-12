@@ -1,10 +1,82 @@
-:root {
-  --background: linear-gradient(270deg, #00669122, #94e7ffaa); }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap");
+.bg-celeste-claro {
+  background-color: #94e7ff; }
+
+.bg-celeste {
+  background-color: #40cfff; }
+
+.bg-celeste-oscuro {
+  background-color: #2499c7; }
+
+.subtitle {
+  margin-bottom: 30px;
+  font-weight: 700; }
+
+.navbar {
+  background-color: #40cfff;
+  box-shadow: 0 2px 10px gray; }
+  .navbar .navbar-title {
+    font-family: "Raleway";
+    font-weight: 700;
+    color: #006691;
+    transition: all 300ms; }
+    .navbar .navbar-title:hover {
+      transform: scale(0.95);
+      color: #2499c7; }
+  .navbar .nav-link {
+    font-family: "Raleway";
+    font-weight: 700;
+    color: #006691;
+    transition: all 300ms; }
+    .navbar .nav-link:hover {
+      transform: scale(0.95);
+      color: #2499c7; }
+
+.footer {
+  background-color: #2499c7;
+  font-family: "Raleway"; }
+  .footer .footer-guide {
+    max-width: 305px; }
+    @media (min-width: 768px) {
+      .footer .footer-guide {
+        height: 300px; } }
+    .footer .footer-guide .footer-iframe {
+      height: 100%;
+      width: 100%; }
+  .footer .footer-title {
+    font-weight: 700; }
+  .footer .footer-btn {
+    margin-right: 20px;
+    background-color: #40cfff; }
+    .footer .footer-btn:hover {
+      background-color: #94e7ff;
+      color: #006691; }
+  .footer .social {
+    height: 150px;
+    background-color: #006691; }
+    @media (min-width: 768px) {
+      .footer .social {
+        height: 70px; } }
+    .footer .social .social-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #cdffff; }
+    .footer .social .social-icon {
+      height: 30px;
+      width: 30px;
+      margin-left: 20px; }
+    .footer .social .social-icon:hover {
+      transform: scale(1.1);
+      transition: all .5s; }
+    .footer .social .social-icon-instagram {
+      width: 60px; }
+    .footer .social .social-icon-youtube {
+      width: 40px; }
 
 .header {
   height: calc(100vh - 62.5333px);
   margin-top: 62.5333px;
-  background: var(--background), url(../img/frente-escuela.jpg);
+  background: linear-gradient(270deg, #00669122, #94e7ffaa), url(../img/frente-escuela.jpg);
   background-position: center;
   background-size: cover; }
   .header .header-texts {
@@ -14,38 +86,178 @@
     align-items: center;
     justify-content: center;
     text-align: center; }
-  .header .header-title {
-    margin-bottom: 20px;
-    font-family: "Poppins";
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--azul); }
-    @media (min-width: 768px) {
-      .header .header-title {
-        font-size: 2rem; } }
-    @media (min-width: 1024px) {
-      .header .header-title {
-        font-size: 2.5rem; } }
-  .header .header-subtitle {
-    font-family: "Poppins";
-    font-size: 1.7rem;
-    color: var(--azul); }
-    @media (min-width: 1024px) {
-      .header .header-subtitle {
-        font-size: 2.2rem; } }
+    .header .header-texts .header-title {
+      margin-bottom: 20px;
+      font-family: "Poppins";
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #006691; }
+      @media (min-width: 768px) {
+        .header .header-texts .header-title {
+          font-size: 2.3rem; } }
+      @media (min-width: 1024px) {
+        .header .header-texts .header-title {
+          font-size: 2.5rem; } }
+    .header .header-texts .header-subtitle {
+      font-family: "Poppins";
+      font-size: 1.8rem;
+      color: #006691; }
+      @media (min-width: 1024px) {
+        .header .header-texts .header-subtitle {
+          font-size: 2.3rem; } }
 
-.card .card-title {
+.main-index .card-title {
+  margin-bottom: 15px;
   font-weight: 700; }
 
-.card .card-title, .card .card-text {
-  margin-bottom: 15px;
+.main-index .card-title, .main-index .card-text {
   font-family: "Poppins"; }
 
-.card .card-btn {
-  background-color: var(--celesteOscuro);
+.main-index .card-btn {
+  background-color: #2499c7;
   transition: all 300ms;
   color: white; }
 
-.card .card-btn:hover {
-  background-color: var(--blanco);
-  color: var(--azul); }
+.main-index .card-btn:hover {
+  background-color: #cdffff;
+  color: #006691; }
+
+.main-docentes {
+  margin-top: 72.4px; }
+
+.docentes {
+  text-align: center;
+  font-family: "Poppins"; }
+  .docentes .docentes-figure {
+    height: 80%;
+    width: 60%;
+    max-width: 200px; }
+  .docentes .docentes-img {
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #006691;
+    border-radius: 50%; }
+
+.main-novedades {
+  margin-top: 72.4px;
+  font-family: "Poppins"; }
+  .main-novedades .novedades__text {
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+    background-color: #94e7ff;
+    line-height: 25px; }
+  .main-novedades .novedades__figure {
+    width: 100%;
+    margin: 0 auto; }
+    .main-novedades .novedades__figure .novedades__img {
+      width: 100%;
+      border: 2px solid #006691; }
+
+.main-proyectos {
+  margin-top: 72.4px;
+  font-family: "Poppins"; }
+  .main-proyectos .card {
+    min-width: 80%; }
+    .main-proyectos .card .card-text {
+      line-height: 25px; }
+
+.main-nosotros {
+  margin-top: 72.4px;
+  font-family: "Poppins"; }
+  .main-nosotros .nosotros-figure {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px; }
+    .main-nosotros .nosotros-figure .nosotros-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid #2499c7; }
+  .main-nosotros .nosotros-text {
+    width: 80%;
+    background-color: #cdffff;
+    border: 1px solid #2499c7;
+    line-height: 25px; }
+
+/* .header{
+    height: calc(100vh - 62.5333px);
+
+    margin-top: 62.5333px;
+
+    background: var(--background), url(../img/frente-escuela.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .header-texts{
+        height: inherit;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        text-align: center;
+    }
+    
+    .header-title{
+        margin-bottom: 20px;
+    
+        font-family: "Poppins";
+        font-size: 1.8rem;
+        font-weight: 700;
+
+        color: var(--azul);
+
+        @media (min-width: 768px){
+            font-size: 2rem;
+        }
+        @media (min-width: 1024px){
+            font-size: 2.5rem;
+        }    
+    }
+    
+    .header-subtitle{
+        font-family: "Poppins";
+        font-size: 1.7rem;
+
+        color: var(--azul);
+
+        
+        @media (min-width: 1024px){
+            font-size: 2.2rem;
+        }   
+
+    } 
+}
+
+.card{
+    .card-title{
+        font-weight: 700;
+    }
+    
+    .card-title, .card-text{
+        margin-bottom: 15px;
+    
+        font-family: "Poppins"
+    }
+    
+    .card-btn{
+        background-color: var(--celesteOscuro);
+    
+        transition: all 300ms;
+    
+        color: white;
+    }
+    
+    .card-btn:hover{
+        background-color: var(--blanco);
+    
+        color: var(--azul);
+    }
+} */
