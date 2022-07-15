@@ -1,13 +1,17 @@
 .bg-celeste-claro{
-    background-color: $celesteClaro;
+    background-color: map-get($map: $paleta, $key: 'celesteClaro');
 }
 
 .bg-celeste{
-    background-color: $celeste;
+    background-color: map-get($map: $paleta, $key: 'celeste');
 }
 
 .bg-celeste-oscuro{
-    background-color: $celesteOscuro;
+    background-color: map-get($map: $paleta, $key: 'celesteOscuro');
+}
+
+.main{
+    margin-top: 72.4px;
 }
 
 .subtitle{

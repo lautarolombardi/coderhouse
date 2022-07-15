@@ -6,16 +6,12 @@
     margin-top: 62.5333px;
 
     background: $background, url(../img/frente-escuela.jpg);
-    background-position: center;
-    background-size: cover;
+    @include background(center, cover, scroll);
 
     .header-texts{
         height: inherit;
     
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include d-flex(column, center, center);
     
         text-align: center;
 
@@ -23,28 +19,28 @@
             margin-bottom: 20px;
     
             font-family: $mainFont;
-            font-size: $textSm;
+            font-size: map-get($map: $font-sizes, $key: 'textSm');
             font-weight: 700;
         
-            color: $azul;
+            color: map-get($map: $paleta, $key: 'azul');
 
             @media (min-width: 768px){
-                font-size: $textLg;
+                font-size: map-get($map: $font-sizes, $key: 'textLg');
             }
 
             @media (min-width: 1024px){
-                font-size: $textXl;
+                font-size: map-get($map: $font-sizes, $key: 'textXl');
             }
         }
 
         .header-subtitle{
             font-family: "Poppins";
-            font-size: $textSm;
+            font-size: map-get($map: $font-sizes, $key: 'textSm');
         
-            color: $azul;
+            color: map-get($map: $paleta, $key: 'azul');
 
             @media (min-width: 1024px){
-                font-size: $textLg;
+                font-size: map-get($map: $font-sizes, $key: 'textXl');
             }
         }
     }
@@ -63,7 +59,7 @@
     }
     
     .card-btn{
-        background-color: $celesteOscuro;
+        background-color: map-get($map: $paleta, $key: 'celesteOscuro');
     
         transition: all 300ms;
     
@@ -71,9 +67,9 @@
     }
     
     .card-btn:hover{
-        background-color: $blanco;
+        background-color: map-get($map: $paleta, $key: 'blanco');
     
-        color: $azul;
+        color: map-get($map: $paleta, $key: 'azul');
     }
 }
 
@@ -81,9 +77,6 @@
 
 //docentes
 
-.main-docentes{
-    margin-top: 72.4px;
-}
 
 .docentes{
     text-align: center;
@@ -98,12 +91,12 @@
     
     .docentes-img{
         height: 100%;
-        width: 80%;
+        width: 100%;
     
         object-fit: cover;
         object-position: center;
         
-        border: 2px solid $azul;
+        border: 2px solid map-get($map: $paleta, $key: 'azul');;
         border-radius: 50%;
     }
 }
@@ -112,24 +105,9 @@
 
 
 //novedades
-.main-novedades{
-    margin-top: 72.4px;
+.novedades{
 
     font-family: $mainFont;
-
-    .novedades__text{
-        width: 90%;
-    
-        padding: 10px;
-    
-        position: relative;
-        bottom: 30px;
-        left: 15px;
-    
-        background-color: $celesteClaro;
-    
-        line-height: 25px;
-    }
     
     .novedades__figure{
         width: 100%;
@@ -139,7 +117,7 @@
         .novedades__img{
             width: 100%;
         
-            border: 2px solid $azul;
+            border: 2px solid map-get($map: $paleta, $key: 'azul');
         }
     }
 }
@@ -149,9 +127,7 @@
 
 //proyectos
 
-.main-proyectos{
-    margin-top: 72.4px;
-
+.proyectos{
     font-family: $mainFont;
 
     .card{
@@ -167,9 +143,7 @@
 
 //nosotros
 
-.main-nosotros{
-    margin-top: 72.4px;
-    
+.nosotros{
     font-family: $mainFont;
 
     .nosotros-figure{
@@ -185,17 +159,17 @@
             object-fit: cover;
             object-position: center;
         
-            border: 2px solid $celesteOscuro;
+            border: 2px solid map-get($map: $paleta, $key: 'celesteOscuro');
         }
     }
     
     .nosotros-text{
+        @extend .card-text;
+
         width: 80%;
     
-        background-color: $blanco;
-        border: 1px solid $celesteOscuro;
-    
-        line-height: 25px;
+        background-color: map-get($map: $paleta, $key: 'blanco');
+        border: 1px solid map-get($map: $paleta, $key: 'celesteOscuro');
     }
 }
 

@@ -8,6 +8,9 @@
 .bg-celeste-oscuro {
   background-color: #2499c7; }
 
+.main {
+  margin-top: 72.4px; }
+
 .subtitle {
   margin-bottom: 30px;
   font-weight: 700; }
@@ -104,13 +107,13 @@
       color: #006691; }
       @media (min-width: 1024px) {
         .header .header-texts .header-subtitle {
-          font-size: 2.3rem; } }
+          font-size: 2.5rem; } }
 
 .main-index .card-title {
   margin-bottom: 15px;
   font-weight: 700; }
 
-.main-index .card-title, .main-index .card-text {
+.main-index .card-title, .main-index .card-text, .main-index .nosotros .nosotros-text, .nosotros .main-index .nosotros-text {
   font-family: "Poppins"; }
 
 .main-index .card-btn {
@@ -122,9 +125,6 @@
   background-color: #cdffff;
   color: #006691; }
 
-.main-docentes {
-  margin-top: 72.4px; }
-
 .docentes {
   text-align: center;
   font-family: "Poppins"; }
@@ -134,130 +134,41 @@
     max-width: 200px; }
   .docentes .docentes-img {
     height: 100%;
-    width: 80%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border: 2px solid #006691;
     border-radius: 50%; }
 
-.main-novedades {
-  margin-top: 72.4px;
+.novedades {
   font-family: "Poppins"; }
-  .main-novedades .novedades__text {
-    width: 90%;
-    padding: 10px;
-    position: relative;
-    bottom: 30px;
-    left: 15px;
-    background-color: #94e7ff;
-    line-height: 25px; }
-  .main-novedades .novedades__figure {
+  .novedades .novedades__figure {
     width: 100%;
     margin: 0 auto; }
-    .main-novedades .novedades__figure .novedades__img {
+    .novedades .novedades__figure .novedades__img {
       width: 100%;
       border: 2px solid #006691; }
 
-.main-proyectos {
-  margin-top: 72.4px;
+.proyectos {
   font-family: "Poppins"; }
-  .main-proyectos .card {
+  .proyectos .card {
     min-width: 80%; }
-    .main-proyectos .card .card-text {
+    .proyectos .card .card-text, .proyectos .card .nosotros .nosotros-text, .nosotros .proyectos .card .nosotros-text {
       line-height: 25px; }
 
-.main-nosotros {
-  margin-top: 72.4px;
+.nosotros {
   font-family: "Poppins"; }
-  .main-nosotros .nosotros-figure {
+  .nosotros .nosotros-figure {
     width: 90%;
     max-width: 400px;
     margin-bottom: 20px; }
-    .main-nosotros .nosotros-figure .nosotros-img {
+    .nosotros .nosotros-figure .nosotros-img {
       height: 100%;
       width: 100%;
       object-fit: cover;
       object-position: center;
       border: 2px solid #2499c7; }
-  .main-nosotros .nosotros-text {
+  .nosotros .nosotros-text {
     width: 80%;
     background-color: #cdffff;
-    border: 1px solid #2499c7;
-    line-height: 25px; }
-
-/* .header{
-    height: calc(100vh - 62.5333px);
-
-    margin-top: 62.5333px;
-
-    background: var(--background), url(../img/frente-escuela.jpg);
-    background-position: center;
-    background-size: cover;
-
-    .header-texts{
-        height: inherit;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-        text-align: center;
-    }
-    
-    .header-title{
-        margin-bottom: 20px;
-    
-        font-family: "Poppins";
-        font-size: 1.8rem;
-        font-weight: 700;
-
-        color: var(--azul);
-
-        @media (min-width: 768px){
-            font-size: 2rem;
-        }
-        @media (min-width: 1024px){
-            font-size: 2.5rem;
-        }    
-    }
-    
-    .header-subtitle{
-        font-family: "Poppins";
-        font-size: 1.7rem;
-
-        color: var(--azul);
-
-        
-        @media (min-width: 1024px){
-            font-size: 2.2rem;
-        }   
-
-    } 
-}
-
-.card{
-    .card-title{
-        font-weight: 700;
-    }
-    
-    .card-title, .card-text{
-        margin-bottom: 15px;
-    
-        font-family: "Poppins"
-    }
-    
-    .card-btn{
-        background-color: var(--celesteOscuro);
-    
-        transition: all 300ms;
-    
-        color: white;
-    }
-    
-    .card-btn:hover{
-        background-color: var(--blanco);
-    
-        color: var(--azul);
-    }
-} */
+    border: 1px solid #2499c7; }
