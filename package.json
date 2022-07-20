@@ -1,7 +1,7 @@
 {
-  "name": "escuela-secundaria---lombardi",
+  "name": "escuela-secundaria",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web de la escuela de educacion secundaria n°56 orientada en educación física",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/lautarolombardi/coderhouse.git"
   },
-  "author": "",
+  "author": "Lautaro Lombardi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lautarolombardi/coderhouse/issues"
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/lautarolombardi/coderhouse#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "bootstrap": "5.2.0"
   }
 }
