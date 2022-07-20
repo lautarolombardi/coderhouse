@@ -15,32 +15,32 @@
     
         text-align: center;
 
+        font-family: $mainFont;
+
         .header-title{
             margin-bottom: 20px;
     
-            font-family: $mainFont;
             font-size: map-get($map: $font-sizes, $key: 'textSm');
             font-weight: 700;
         
             color: map-get($map: $paleta, $key: 'azul');
 
             @media (min-width: 768px){
-                font-size: map-get($map: $font-sizes, $key: 'textLg');
+                font-size: map-get($map: $font-sizes, $key: 'textMd');
             }
 
             @media (min-width: 1024px){
-                font-size: map-get($map: $font-sizes, $key: 'textXl');
+                font-size: map-get($map: $font-sizes, $key: 'textLg');
             }
         }
 
         .header-subtitle{
             font-family: "Poppins";
-            font-size: map-get($map: $font-sizes, $key: 'textSm');
         
             color: map-get($map: $paleta, $key: 'azul');
 
             @media (min-width: 1024px){
-                font-size: map-get($map: $font-sizes, $key: 'textXl');
+                font-size: map-get($map: $font-sizes, $key: 'textMd');
             }
         }
     }
@@ -48,6 +48,10 @@
 }
 
 .main-index{
+    .card{
+        border: 1px solid map-get($map: $paleta, $key: 'azul');
+    }
+
     .card-title{
         margin-bottom: 15px;
     
@@ -85,7 +89,7 @@
 
     .docentes-figure{
         height: 80%;
-        width: 60%;
+        width: 50%;
         max-width: 200px;
     }
     

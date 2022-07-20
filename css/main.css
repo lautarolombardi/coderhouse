@@ -38,7 +38,10 @@
 .footer {
   background-color: #2499c7;
   font-family: "Raleway"; }
+  .footer .footer-container {
+    padding: 70px 0; }
   .footer .footer-guide {
+    height: 200px;
     max-width: 305px; }
     @media (min-width: 768px) {
       .footer .footer-guide {
@@ -46,8 +49,8 @@
     .footer .footer-guide .footer-iframe {
       height: 100%;
       width: 100%; }
-  .footer .footer-title {
-    font-weight: 700; }
+  .footer .form-check-label {
+    margin-right: 20px; }
   .footer .footer-btn {
     margin-right: 20px;
     background-color: #40cfff; }
@@ -81,17 +84,18 @@
   margin-top: 62.5333px;
   background: linear-gradient(270deg, #00669122, #94e7ffaa), url(../img/frente-escuela.jpg);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: scroll; }
   .header .header-texts {
     height: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    font-family: "Poppins"; }
     .header .header-texts .header-title {
       margin-bottom: 20px;
-      font-family: "Poppins";
       font-size: 1.8rem;
       font-weight: 700;
       color: #006691; }
@@ -100,14 +104,16 @@
           font-size: 2.3rem; } }
       @media (min-width: 1024px) {
         .header .header-texts .header-title {
-          font-size: 2.5rem; } }
+          font-size: 2.8rem; } }
     .header .header-texts .header-subtitle {
       font-family: "Poppins";
-      font-size: 1.8rem;
       color: #006691; }
       @media (min-width: 1024px) {
         .header .header-texts .header-subtitle {
-          font-size: 2.5rem; } }
+          font-size: 2.3rem; } }
+
+.main-index .card {
+  border: 1px solid #006691; }
 
 .main-index .card-title {
   margin-bottom: 15px;
@@ -130,7 +136,7 @@
   font-family: "Poppins"; }
   .docentes .docentes-figure {
     height: 80%;
-    width: 60%;
+    width: 50%;
     max-width: 200px; }
   .docentes .docentes-img {
     height: 100%;

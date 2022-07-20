@@ -3,7 +3,12 @@
 
     font-family: $secondFont;
 
+    .footer-container{
+        padding: 70px 0;
+    }
+
     .footer-guide{
+        height: 200px;
         max-width: 305px;
 
         @media (min-width: 768px){
@@ -16,8 +21,8 @@
         }
     }
 
-    .footer-title{
-        font-weight: 700;
+    .form-check-label{
+        margin-right: 20px;
     }
     
     .footer-btn{
